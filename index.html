@@ -1,6 +1,141 @@
-<!doctype HTML>
-<html>
-  <body>
-    <hi> My testing website</hi>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name — Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    .header {
+      position: relative;
+      height: 300px;
+      /* change the url(...) to your chosen background image */
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .header-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.4); /* dark overlay */
+    }
+    .profile-pic {
+      width: 150px; height: 150px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      position: absolute;
+      bottom: -75px; /* half of the pic height to center */
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #ddd;
+      overflow: hidden;
+    }
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .container {
+      max-width: 800px;
+      margin: 100px auto 50px; /* top margin enough to accommodate profile pic overlap */
+      padding: 0 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    .name {
+      text-align: center;
+      margin-top: 80px; /* to push below the profile pic */
+      font-size: 2em;
+      font-weight: bold;
+    }
+    .title {
+      text-align: center;
+      color: #777;
+      font-size: 1.2em;
+      margin-top: 5px;
+    }
+    .about {
+      margin: 30px 0;
+      line-height: 1.6;
+      font-size: 1.1em;
+    }
+    .skills, .contact {
+      margin: 30px 0;
+    }
+    .skills ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .skills ul li {
+      display: inline-block;
+      background-color: #eee;
+      color: #555;
+      padding: 8px 12px;
+      margin: 5px;
+      border-radius: 4px;
+    }
+    .contact a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      margin: 50px 0;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="header-overlay"></div>
+    <div class="profile-pic">
+      <img src="your-photo.jpg" alt="Your Name"/>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="name">Your Name</div>
+    <div class="title">Your Title or Profession</div>
+
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        Write a few lines about yourself: your background, interests, what you do etc. 
+        This is the place to give a friendly introduction.
+      </p>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Skill One</li>
+        <li>Skill Two</li>
+        <li>Skill Three</li>
+        <li>Skill Four</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">yourprofile</a></p>
+      <p>Other: your blog, twitter etc.</p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Your Name. All rights reserved.
+  </footer>
+
+</body>
 </html>
